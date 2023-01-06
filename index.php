@@ -15,6 +15,7 @@
         $count = 0;
         $path = 'videos';
         $files = scandir($path);
+        natcasesort($files);
         foreach($files as $file){
           if ($count > 1){
             echo "<option value=" . $file . ">" . $file ."</option>";
